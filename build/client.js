@@ -1,0 +1,2 @@
+(()=>{var e;"true"===localStorage.getItem("dark-mode")&&document.body.classList.add("dark"),null===(e=document.querySelector(".toggle-dark-mode"))||void 0===e||e.addEventListener("click",(function(){document.body.classList.toggle("dark"),localStorage.setItem("dark-mode",document.body.classList.contains("dark")?"true":"false")}))})();
+//# sourceMappingURL=client.js.map
