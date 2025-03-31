@@ -1,6 +1,6 @@
 {
   "name": "@hodgef/vantage-theme",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Vantage Theme for PRSS",
   "main": "build/index.js",
   "scripts": {
