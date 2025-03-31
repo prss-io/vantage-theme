@@ -4,6 +4,9 @@
 .page.page-post .post-content h4,
 .page.page-post .post-content h5,
 .page.page-post .post-content h6 {
+  margin-bottom:.5rem;
+  font-weight: 600;
+  line-height: 1.2;
   text-rendering: optimizeLegibility;
 }
 
