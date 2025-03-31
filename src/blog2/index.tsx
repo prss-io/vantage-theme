@@ -41,7 +41,7 @@ const Blog = data => {
               <h1 className="text-4xl font-extrabold lg:text-5xl">Blog</h1>
               {content && content.trim().length ? (
                 <section
-                  className="text-muted-foreground lg:text-xl"
+                  className="post-content text-muted-foreground lg:text-xl"
                   dangerouslySetInnerHTML={{
                     __html: content
                   }}

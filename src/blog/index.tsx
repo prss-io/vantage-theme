@@ -42,7 +42,7 @@ const Blog = data => {
             <h1 className="text-3xl md:text-4xl font-bold lg:text-5xl mb-6">Blog</h1>
             {content && content.trim().length ? (
               <section
-                className="mb-12 text-lg text-muted-foreground md:text-xl lg:max-w-3xl"
+                className="post-content mb-12 text-lg text-muted-foreground md:text-xl lg:max-w-3xl"
                 dangerouslySetInnerHTML={{
                   __html: content
                 }}
@@ -60,8 +60,7 @@ const Blog = data => {
                       <h3 className="text-xl font-semibold md:text-2xl lg:text-3xl">
                         <a
                           href={post.url}
-                          target="_blank"
-                          className="hover:underline" rel="noreferrer"
+                          className="hover:underline"
                         >
                           {post.title}
                         </a>
@@ -83,8 +82,7 @@ const Blog = data => {
                       <div className="mt-6 flex items-center space-x-2 md:mt-8">
                         <a
                           href={post.url}
-                          target="_blank"
-                          className="inline-flex items-center font-semibold hover:underline md:text-base" rel="noreferrer"
+                          className="inline-flex items-center font-semibold hover:underline md:text-base"
                         >
                           <span>Read more</span>
                           <ArrowRight className="ml-2 size-4 transition-transform" />
@@ -92,7 +90,7 @@ const Blog = data => {
                       </div>
                     </div>
                     <div className="order-first sm:order-last sm:col-span-5">
-                      <a href={post.url} target="_blank" className="block" rel="noreferrer">
+                      <a href={post.url} className="block">
                         <div className="aspect-[16/9] overflow-clip rounded-lg border border-border">
                           {post.image ? (
                             <img

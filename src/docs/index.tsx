@@ -190,7 +190,7 @@ const Docs = data => {
 
                   {/* Main Content */}
                   {content && (
-                    <div className="prose dark:prose-invert max-w-none">
+                    <div className="post-content prose dark:prose-invert max-w-none">
                       <div dangerouslySetInnerHTML={{ __html: content }} />
                     </div>
                   )}

@@ -10,6 +10,8 @@ interface IVars {
     featuredImageAlt?: string;
     truncateTitleLength?: string;
     truncateContentLength?: string;
+    defaultTheme?: string;
+    disableThemeSwitcher?: string;
 
     /**
      * Links

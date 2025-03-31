@@ -16,9 +16,10 @@ import Menu from "./Menu";
 const Header = () => {
   console.log(PRSS.getAllProps());
 
-  const { logoImageUrl } = PRSS.getProp("vars");
+  const { logoImageUrl, disableThemeSwitcher } = PRSS.getProp("vars");
   const { title } = PRSS.getProp("site");
   const currentPostId = PRSS.getProp("item").uuid;
+  const shouldDisableThemeSwitcher = disableThemeSwitcher === "true";
 
   const props = PRSS.getAllProps();
 
@@ -105,9 +106,9 @@ const Header = () => {
                   />
                 </NavigationMenuList>
               </NavigationMenu>
-              <Button variant="outline" size="sm" title="Toggle Dark Mode" className="cursor-pointer toggle-dark-mode">
+              {!shouldDisableThemeSwitcher ? <Button variant="outline" size="sm" title="Toggle Dark Mode" className="cursor-pointer toggle-dark-mode">
                 <Sun className="size-4" />
-              </Button>
+              </Button> : null}
             </div>
           </div>
         </nav>

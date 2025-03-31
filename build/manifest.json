@@ -1,16 +1,20 @@
 {
   "name": "@hodgef/vantage-theme",
   "title": "Vantage",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "author": "Francisco Hodge",
   "homepage": "https://github.com/prss-io/vantage-theme",
   "license": "MIT",
   "type": "blog",
   "parser": "react",
   "siteVars": {
-    "logoImageUrl": {
-      "type": "image",
-      "description": "Path for the site logo"
+    "defaultTheme": {
+      "type": "string",
+      "description": "\"light\" or \"dark\" theme to be used by default"
+    },
+    "disableThemeSwitcher": {
+      "type": "string",
+      "description": "Set to \"true\" to disable the theme switcher"
     },
     "featuredImageUrl": {
       "type": "image",

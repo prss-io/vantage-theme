@@ -37,9 +37,10 @@ const Home = data => {
         <section className="flex justify-center">
           <div className="relative mx-auto flex max-w-screen-xl flex-col gap-12 mt-6 w-full">
             {/* Hero Section */}
-            <div className="w-full text-lg md:text-xl mb-6 opacity-90 max-w-2xl">
+            <div className="w-full text-lg md:text-xl opacity-90 max-w-2xl">
               {content && content.trim().length && (
                 <section
+                  className="post-content"
                   dangerouslySetInnerHTML={{
                     __html: content
                   }}

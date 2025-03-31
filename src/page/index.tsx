@@ -19,7 +19,7 @@ const Post = data => {
     <Page className="page-post">
       <Header />
       <main className="pb-6">
-        <section className="flex justify-center">
+        <section className="post-content flex justify-center">
           <div className="relative mx-auto flex max-w-screen-xl flex-col w-full mt-6">
             <div className="flex flex-col lg:flex-row gap-10">
               <div className={cx("w-full", {
