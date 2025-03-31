@@ -15,6 +15,7 @@ const Home = data => {
   const { blogPosts } = PRSS.getProp("vars") as any;
   const { content } = PRSS.getProp("item");
   const items = PRSS.getItems("post", true, blogPosts);
+  const { rootPath } = PRSS.getAllProps();
 
   const posts = items.slice(0, 6).map((post) => {
     return {
@@ -52,7 +53,7 @@ const Home = data => {
             <div className="w-full">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-bold">Latest Articles</h2>
-                <a href="/blog" className="text-primary flex items-center gap-1 hover:underline">
+                <a href={`${rootPath}blog`} className="text-primary flex items-center gap-1 hover:underline">
                   View all <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
