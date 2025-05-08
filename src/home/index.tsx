@@ -39,14 +39,9 @@ const Home = data => {
           <div className="relative mx-auto flex max-w-screen-xl flex-col gap-12 mt-6 w-full">
             {/* Hero Section */}
             <div className="w-full text-lg md:text-xl opacity-90 max-w-2xl">
-              {content && content.trim().length && (
-                <section
-                  className="post-content"
-                  dangerouslySetInnerHTML={{
-                    __html: content
-                  }}
-                />
-              )}
+                <section className="post-content">
+                  <div className="post-inner-content" dangerouslySetInnerHTML={{ __html: content }} />
+                </section>
             </div>
 
             {/* Articles Section */}

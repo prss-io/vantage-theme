@@ -40,14 +40,14 @@ const Blog = data => {
         <section className="flex justify-center mx-auto flex max-w-screen-xl flex-col gap-20 lg:flex-row mt-6">
           <div className="container flex flex-col">
             <h1 className="text-3xl md:text-4xl font-bold lg:text-5xl mb-6">Blog</h1>
-            {content && content.trim().length ? (
-              <section
-                className="post-content mb-12 text-lg text-muted-foreground md:text-xl lg:max-w-3xl"
+            <div className="post-content mb-12 text-lg text-muted-foreground md:text-xl lg:max-w-3xl">
+              <div
+                className="post-inner-content"
                 dangerouslySetInnerHTML={{
                   __html: content
                 }}
               />
-            ) : null}
+            </div>
 
             <div className="grid gap-y-10 sm:grid-cols-12 sm:gap-y-12 md:gap-y-16 lg:gap-y-20">
               {posts.map((post) => (

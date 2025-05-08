@@ -39,14 +39,14 @@ const Blog = data => {
           <div className="relative mx-auto flex max-w-screen-xl flex-col gap-20 lg:flex-row mt-6">
             <header className="top-10 flex h-fit flex-col items-center gap-5 text-center lg:sticky lg:min-w-80 lg:items-start lg:gap-8 lg:text-left">
               <h1 className="text-4xl font-extrabold lg:text-5xl">Blog</h1>
-              {content && content.trim().length ? (
-                <section
-                  className="post-content text-muted-foreground lg:text-xl"
+              <div className="post-content text-muted-foreground lg:text-xl">
+                <div
+                  className="post-inner-content"
                   dangerouslySetInnerHTML={{
                     __html: content
                   }}
                 />
-              ) : null}
+              </div>
             </header>
             <div>
               <div className="grid gap-4 md:grid-cols-2">

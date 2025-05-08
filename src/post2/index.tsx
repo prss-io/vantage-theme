@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import "./index.css";
 
 import React from "react";
@@ -72,6 +71,7 @@ const Post = data => {
               {content && content.trim().length && (
                 <div className="post-content prose dark:prose-invert max-w-none pb-12 border-b">
                   <div
+                    className="post-inner-content"
                     dangerouslySetInnerHTML={{
                       __html: content
                     }}

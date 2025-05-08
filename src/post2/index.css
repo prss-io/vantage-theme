@@ -96,21 +96,20 @@
 
 .page .post-content ol,
 .page .post-content ul {
-  list-style: none;
-  counter-reset: item;
+  list-style: disc;
   padding: 0;
-  margin: 30px 0;
+  margin: 30px;
 }
 
-.page .post-content li {
-  counter-increment: item;
-  margin-bottom: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  padding: 15px 20px;
-  border-radius: 20px;
-  position: relative;
-  font-size: 18px;
-  line-height: 1.58;
+.page .post-content figcaption,
+.page .post-content blockquote {
+  padding: 35px;
+  margin-bottom: 10px;
+}
+
+.page .post-content figcaption p,
+.page .post-content blockquote p {
+  margin-bottom: 5px !important;
 }
 
 .page.page-post .featured-image {

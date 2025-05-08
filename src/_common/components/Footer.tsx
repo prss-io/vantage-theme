@@ -2,7 +2,7 @@ import "../styles/Footer.css";
 
 import React from "react";
 import * as PRSS from "prss";
-import prssImg from "@/images/prss-sm.png";
+//import prssImg from "@/images/prss-sm.png";
 
 const Footer = () => {
   const { footerLeft, footerRight } = PRSS.getProp("vars");
@@ -39,8 +39,8 @@ const Footer = () => {
                 >
                   <img
                     className="prss-footer-image mr-1"
-                    src={prssImg}
-                    width={15}
+                    src="https://prss-static.volted.co/images/logo.png"
+                    width={16}
                   />
                   <span className="font-weight-bold prss-tag">PRSS Site Creator</span>
                 </a>

@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import "./index.css";
 
 import React, { useState } from "react";
@@ -189,11 +188,9 @@ const Docs = data => {
                   )}
 
                   {/* Main Content */}
-                  {content && (
-                    <div className="post-content prose dark:prose-invert max-w-none">
-                      <div dangerouslySetInnerHTML={{ __html: content }} />
-                    </div>
-                  )}
+                  <div className="post-content prose dark:prose-invert max-w-none">
+                    <div className="post-inner-content" dangerouslySetInnerHTML={{ __html: content }} />
+                  </div>
 
                   {/* Footer Call to Action */}
                   {isset(footerCta) && (

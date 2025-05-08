@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import "./index.css";
 
 import React from "react";
@@ -25,15 +24,9 @@ const Post = data => {
               <div className={cx("w-full", {
                 "lg:w-[70%]": sidebarHtml
               })}>
-                {content && content.trim().length && (
-                  <div className="prose dark:prose-invert max-w-none pb-8">
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: content
-                      }}
-                    />
-                  </div>
-                )}
+                <div className="post-inner-content prose dark:prose-invert max-w-none pb-8" dangerouslySetInnerHTML={{
+                  __html: content
+                }}></div>
               </div>
               
               {sidebarHtml && (
