@@ -116,7 +116,7 @@
   height: 355px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   margin: 5px;
   border-radius: 20px;
   position: relative;
@@ -158,6 +158,7 @@
 .page.page-post .card-img-left img {
   width: 100%;
   object-fit: cover;
+  object-position: top;
   height: 100%;
 }
 

@@ -1,7 +1,7 @@
 {
-  "name": "@hodgef/vantage-theme",
+  "name": "@prss/vantage-theme",
   "title": "Vantage",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "author": "Francisco Hodge",
   "homepage": "https://github.com/prss-io/vantage-theme",
   "license": "MIT",
