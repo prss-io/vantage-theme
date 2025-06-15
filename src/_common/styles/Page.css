@@ -184,6 +184,11 @@
 .page .card a.card-image img {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
+.page .post-image-elem {
+  object-position: top;
+}
+
 .page .card a.card-image:not(.card-has-img):after {
   position: absolute;
   font-family: 'FontAwesome';

@@ -53,7 +53,7 @@ const Post = data => {
                   <img 
                     src={featuredImageUrl} 
                     alt={featuredImageAlt || postTitle} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                   {featuredImageAuthor && featuredImageAuthorLink && (
                     <div className="absolute bottom-0 right-0 bg-black/60 text-white text-xs py-1 px-2 rounded-tl">
