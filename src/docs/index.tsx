@@ -1,5 +1,3 @@
-import "./index.css";
-
 import React, { useState } from "react";
 import * as PRSS from "prss";
 import cx from "classnames";

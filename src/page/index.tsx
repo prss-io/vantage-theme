@@ -1,5 +1,3 @@
-import "./index.css";
-
 import React from "react";
 import * as PRSS from "prss";
 import Header from "@/components/Header";
@@ -15,7 +13,7 @@ const Post = data => {
   const sidebarHtml = PRSS.getProp("sidebarHtml");
 
   return (
-    <Page className="page-post">
+    <Page className="page-single">
       <Header />
       <main className="pb-6">
         <section className="post-content flex justify-center">

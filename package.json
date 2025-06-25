@@ -1,6 +1,6 @@
 {
   "name": "@prss/vantage-theme",
-  "version": "1.0.20",
+  "version": "1.1.2",
   "description": "Vantage Theme for PRSS",
   "main": "build/index.js",
   "scripts": {

@@ -1,5 +1,3 @@
-import "./index.css";
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";

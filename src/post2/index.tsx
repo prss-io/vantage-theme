@@ -1,5 +1,3 @@
-import "./index.css";
-
 import React from "react";
 import * as PRSS from "prss";
 import { ArrowRight, Clock } from "lucide-react";
@@ -49,7 +47,7 @@ const Post = data => {
             {/* Right Column - Post Content - 70% width */}
             <div className="w-full lg:w-[70%]">
               {featuredImageUrl && (
-                <div className="mb-8 rounded-lg overflow-hidden relative h-[300px]">
+                <div className="mb-8 rounded-lg overflow-hidden relative h-[500px]">
                   <img 
                     src={featuredImageUrl} 
                     alt={featuredImageAlt || postTitle} 

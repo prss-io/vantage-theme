@@ -1,5 +1,3 @@
-import "./index.css";
-
 import React from "react";
 import cx from "classnames";
 import Header from "@/components/Header";
