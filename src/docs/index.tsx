@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as PRSS from "prss";
+import * as PRSS from "@prss/ui";
 import cx from "classnames";
 import { ChevronDown, ChevronRight, ChevronLeft } from "lucide-react";
 
@@ -11,6 +11,8 @@ import Aside from "@/components/Aside";
 import { isset } from "@/lib/utils";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
+
+import ContentRenderer from "@prss/ui/build/ContentRenderer";
 
 const Docs = data => {
   PRSS.init(data);
@@ -116,7 +118,7 @@ const Docs = data => {
             {/* Featured Image Banner */}
             {featuredImageUrl && (
               <div 
-                className="w-full h-48 bg-cover bg-center rounded-b-lg overflow-hidden"
+                className="w-full h-48 bg-cover bg-center rounded-b-lg overflow-hidden mb-5"
                 style={{
                   backgroundImage: `url(${featuredImageUrl})`
                 }}
@@ -187,7 +189,10 @@ const Docs = data => {
 
                   {/* Main Content */}
                   <div className="post-content prose dark:prose-invert max-w-none">
-                    <div className="post-inner-content" dangerouslySetInnerHTML={{ __html: content }} />
+                    <ContentRenderer 
+                      content={content}
+                      className="post-inner-content"
+                    />
                   </div>
 
                   {/* Footer Call to Action */}

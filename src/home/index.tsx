@@ -4,7 +4,9 @@ import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Page from "@/components/Page";
-import * as PRSS from "prss";
+import * as PRSS from "@prss/ui";
+
+import ContentRenderer from "@prss/ui/build/ContentRenderer";
 
 const Home = data => {
   PRSS.init(data);
@@ -38,7 +40,10 @@ const Home = data => {
             {/* Hero Section */}
             <div className="w-full text-lg md:text-xl opacity-90 max-w-2xl">
                 <section className="post-content">
-                  <div className="post-inner-content" dangerouslySetInnerHTML={{ __html: content }} />
+                  <ContentRenderer 
+                    content={content}
+                    className="post-inner-content"
+                  />
                 </section>
             </div>
 

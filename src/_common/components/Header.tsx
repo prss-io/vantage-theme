@@ -2,7 +2,7 @@ import "../styles/Header.css";
 
 import React from "react";
 import { ChevronDownIcon, Sun } from "lucide-react";
-import * as PRSS from "prss";
+import * as PRSS from "@prss/ui";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,

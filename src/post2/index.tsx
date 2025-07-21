@@ -1,5 +1,5 @@
 import React from "react";
-import * as PRSS from "prss";
+import * as PRSS from "@prss/ui";
 import { ArrowRight, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

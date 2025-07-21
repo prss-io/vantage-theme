@@ -1,7 +1,7 @@
 import "../styles/Footer.css";
 
 import React from "react";
-import * as PRSS from "prss";
+import * as PRSS from "@prss/ui";
 //import prssImg from "@/images/prss-sm.png";
 
 const Footer = () => {

@@ -3,16 +3,18 @@ import cx from "classnames";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Page from "@/components/Page";
-import * as PRSS from "prss";
+import * as PRSS from "@prss/ui";
+
+import ContentRenderer from "@prss/ui/build/ContentRenderer";
 
 const Blog = data => {
   PRSS.init(data);
   (window as any).PRSS = PRSS;
 
   const { rootPath } = data;
-  const { blogPosts, currentPage, totalPages } = PRSS.getProp("vars") as any;
-  const { content } = PRSS.getProp("item");
-  const items = PRSS.getItems(["post", "post2"], true, blogPosts);
+  const { blogPosts, currentPage, totalPages, category } = PRSS.getProp("vars") as any;
+  const { content, slug } = PRSS.getProp("item");
+  const items = PRSS.getItems(["post", "post2"], true, blogPosts, category);
   const adjustedRootPath = currentPage === 1 ? rootPath : `../${rootPath}`;
 
   const posts = items.map((post) => {
@@ -38,11 +40,9 @@ const Blog = data => {
             <header className="top-10 flex h-fit flex-col items-center gap-5 text-center lg:sticky lg:min-w-80 lg:items-start lg:gap-8 lg:text-left">
               <h1 className="text-4xl font-extrabold lg:text-5xl">Blog</h1>
               <div className="post-content text-muted-foreground lg:text-xl">
-                <div
+                <ContentRenderer 
+                  content={content}
                   className="post-inner-content"
-                  dangerouslySetInnerHTML={{
-                    __html: content
-                  }}
                 />
               </div>
             </header>
@@ -80,7 +80,7 @@ const Blog = data => {
                     <li className="page-item">
                       <a
                         className="page-link"
-                        href={`${adjustedRootPath}blog/${currentPage - 1 === 1 ? "" : currentPage - 1}`}
+                        href={`${adjustedRootPath}${slug}/${currentPage - 1 === 1 ? "" : currentPage - 1}`}
                       >
                         Previous
                       </a>
@@ -92,7 +92,7 @@ const Blog = data => {
                     return (
                       <li key={i} className="page-item">
                         <a
-                          href={`${pageNumber === 1 ? `${adjustedRootPath}blog/` : `${adjustedRootPath}blog/${pageNumber}/`}`}
+                          href={`${pageNumber === 1 ? `${adjustedRootPath}${slug}/` : `${adjustedRootPath}${slug}/${pageNumber}/`}`}
                           className={cx("page-link", { active: isActive })}
                         >
                           {pageNumber}
@@ -104,7 +104,7 @@ const Blog = data => {
                     <li className="page-item">
                       <a
                         className="page-link"
-                        href={`${adjustedRootPath}blog/${currentPage + 1}`}
+                        href={`${adjustedRootPath}${slug}/${currentPage + 1}`}
                       >
                         Next
                       </a>
