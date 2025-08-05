@@ -9,6 +9,10 @@
   .page {
     padding: 20px;
   }
+
+  .page main {
+    padding: 0 !important;
+  }
 }
 .page p {
   font-size: 20px;
@@ -49,6 +53,7 @@
   min-height: calc(100vh - (350px + 65px));
   background: var(--background);
   margin-bottom: 20vh;
+  padding: 0 20px;
 }
 .page main .content {
   font-size: 18px;
