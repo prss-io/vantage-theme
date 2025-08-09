@@ -1,6 +1,6 @@
 {
   "name": "@prss/vantage-theme",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Vantage Theme for PRSS",
   "main": "build/index.js",
   "scripts": {
@@ -64,7 +64,7 @@
     "mini-css-extract-plugin": "^1.6.2",
     "postcss": "^8.5.3",
     "postcss-loader": "^8.1.1",
-    "@prss/ui": "^2.1.4",
+    "@prss/ui": "2.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
