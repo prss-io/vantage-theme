@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import Page from "@/components/Page";
 import * as PRSS from "@prss/ui";
 
-import ContentRenderer from "@prss/ui/build/ContentRenderer";
+import { ContentRenderer } from "@prss/ui";
 
 const Blog = data => {
   PRSS.init(data);

@@ -12,7 +12,7 @@ import { isset } from "@/lib/utils";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 
-import ContentRenderer from "@prss/ui/build/ContentRenderer";
+import { ContentRenderer } from "@prss/ui";
 
 const Docs = data => {
   PRSS.init(data);

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Page from "@/components/Page";
 import { cx } from "@/lib/utils";
 
-import ContentRenderer from "@prss/ui/build/ContentRenderer";
+import { ContentRenderer } from "@prss/ui";
 
 const Post = data => {
   PRSS.init(data);

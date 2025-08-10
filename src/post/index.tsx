@@ -7,7 +7,7 @@ import Page from "@/components/Page";
 import { isset } from "@/lib/utils";
 import Aside from "@/components/Aside";
 
-import ContentRenderer from "@prss/ui/build/ContentRenderer";
+import { ContentRenderer } from "@prss/ui";
 
 const Post = data => {
   PRSS.init(data);
