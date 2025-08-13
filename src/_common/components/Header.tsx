@@ -29,7 +29,7 @@ const Header = () => {
         {nodeChildren.map(nodeItem => {
           const post = PRSS.getItem(nodeItem.key);
           return (
-            <a key={nodeItem.key} className="dropdown-item inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground" href={post?.url}>
+            <a key={nodeItem.key} className="dropdown-item inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground" href={post?.url}>
               {post?.title}
             </a>
           );
@@ -61,18 +61,18 @@ const Header = () => {
         {!!nodeChildren?.length ? (
           <NavigationMenuLink
             href={post?.url}
-            className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
+            className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
           >
             {node.title || post?.title}
             <ChevronDownIcon
-              className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
+              className="relative top-[1px] text-inherit ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
               aria-hidden="true"
             />
           </NavigationMenuLink>
         ) : (
           <NavigationMenuLink
             href={post?.url}
-            className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
+            className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
           >
             {node.title || post?.title}
           </NavigationMenuLink>

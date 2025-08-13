@@ -70,10 +70,6 @@
   top: 40%;
 }
 
-.page header.page-header .header-nav .nav-item.dropdown > a:hover svg {
-  display: none;
-}
-
 .page header.page-header .header-nav .dropdown-menu {
   display: none;
   flex-flow: column;
