@@ -69,6 +69,7 @@
 .page main .content .post-content img[alt] {
   max-width: 100%;
   height: auto !important;
+  display: inline-block;
 }
 .page main .content .card.text-white blockquote footer {
   color: white;

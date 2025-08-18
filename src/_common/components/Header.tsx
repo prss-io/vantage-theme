@@ -11,7 +11,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { cx } from "@/lib/utils";
-import Menu from "./Menu";
+import { Menu } from "@prss/ui";
 
 const Header = () => {
   console.log(PRSS.getAllProps());

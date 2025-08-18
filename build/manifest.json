@@ -1,7 +1,7 @@
 {
   "name": "@prss/vantage-theme",
   "title": "Vantage",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Francisco Hodge",
   "homepage": "https://github.com/prss-io/vantage-theme",
   "license": "MIT",
@@ -23,6 +23,10 @@
     "featuredImageAlt": {
       "type": "image",
       "description": "Path for the post's alt featured image"
+    },
+    "docsImageUrl": {
+      "type": "image",
+      "description": "Image to display instead of the title in documentation pages"
     },
     "faviconImageUrl": {
       "type": "image",

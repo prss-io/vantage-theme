@@ -12,6 +12,8 @@ interface IVars {
     truncateContentLength?: string;
     defaultTheme?: string;
     disableThemeSwitcher?: string;
+    heroTitle?: string;
+    docsImageUrl?: string;
 
     /**
      * Links

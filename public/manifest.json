@@ -22,6 +22,10 @@
             "type": "image",
             "description": "Path for the post's alt featured image"
         },
+        "docsImageUrl": {
+            "type": "image",
+            "description": "Image to display instead of the title in documentation pages"
+        },
         "faviconImageUrl": {
             "type": "image",
             "description": "Path for the site favicon (browser tab icon)"
